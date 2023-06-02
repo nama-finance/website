@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Mark Pro';
+    src: url(./assets/MARKPRO.OTF) format("truetype");
+}
+@font-face {
+    font-family: 'Mark Pro Black';
+    src: url(./assets/MARKPROBLACK.OTF) format("truetype");
+}
+
+body {
+    font-family: 'Mark Pro', serif;
+    background-color: #070627;
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+li {
+    min-height: 70px;
+}
+.radial-cover {
+    width: 1826px;
+    height: 1826px;
+    position: absolute;
+    left: -880px;
+    top: -982px;
+    background: radial-gradient(35.8% 35.8% at 52.19% 50%, #F26522 0%, rgba(249, 109, 177, 0) 100%);
+    mix-blend-mode: normal;
+    z-index: -9999;
+}
+.dark-font {
+    color: #2E3D5E
+}
+.gray1 {
+    color: #E8E8E8
+}
+
+.for-bg {
+    background: url("./assets/for-bg.png") no-repeat -38px center;
+    background-size: 131px 104px;
+}
+
+.bold-900 {
+    font-family: 'Mark Pro Black', serif;
+}
+
+.button-outlined {
+    color: #ED682C;
+    border: 2px solid #ED682C;
+    box-sizing: border-box;
+    border-radius: 100px;
+    /* width: 217px;
+    height: 56px; */
+    padding: 18px 52px;
+}
+
+.button-outlined:hover {
+    color: white;
+    background: #ED682C;
+}
+
+.button-filled-app {
+  background: linear-gradient(135deg, #F26522 0%, #F96DB1 100%);
+  mix-blend-mode: normal;
+  border-radius: 100px;
+  /* width: 217px;
+  height: 56px; */
+  padding: 18px 52px;
+}
+.button-filled-app:hover {
+  color: white;
+  background: #ED682C;
+}
+
+.header-right-bg-item {
+    display: inline-block;
+    position: absolute;
+    z-index: -9999;
+    right: 0;
+}
+
+.feature-bullet {
+    background: url("./assets/for-bg.png") no-repeat -64px center;
+    background-size: 225px 178px;
+}
+
+.subscribe-box {
+    background-color: white;
+    border-radius: 80px;
+    max-width: 828px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe-box label {
+    margin-left: 24px;
+    flex-grow: 2;
+}
+
+.subscribe-box input {
+    color: #979797;
+    width: 100%;
+    outline: none;
+}
+
+.subscribe-box button {
+    width: 186px;
+    height: 56px;
+    margin-right: 24px;
+}
+
+.button-filled {
+    background: linear-gradient(135deg, #F26522 0%, #F96DB1 100%);
+    mix-blend-mode: normal;
+    border-radius: 60px;
+}
+.button-filled:hover {
+    color: white;
+    background: #ED682C;
+}
+
+.product-left-bg-item {
+    position: absolute;
+    left: 0;
+    z-index: -9999;
+}
+
+.circle-bottom {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 530px);
+    z-index: -9999;
+    max-width: 1059px;
+}
+
+.button-filled-white {
+    width: 92px;
+    height: 24px;
+    line-height: 24px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+}
+
+.very-back {
+    z-index: -9999;
+}
+.hide-hover > div:nth-child(2) {
+    transform-origin: top center;
+    animation: showName .4s forwards;
+}
+.hide-hover:hover > div:nth-child(2){
+    transform-origin: top center;
+    animation: hideName .4s forwards;
+}
+@keyframes showName {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes hideName {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+
+.rightbox {
+    height: 100%;
+}
+
+.rb-container {
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.rb-container ul.rb {
+    margin: 2.5em 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.rb-container ul.rb li.rb-item {
+    list-style: none;
+    margin: auto;
+    min-height: 50px;
+    border-left: 1px solid #687480;
+    padding: 0 0 40px 60px;
+    position: relative;
+}
+
+.rb-container ul.rb li.rb-item:last-child {
+    border-left: 0;
+}
+
+.rb-container ul.rb li.rb-item::before {
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    content: "Q1";
+    border: 8px solid rgba(255, 255, 255, 1);
+    border-radius: 500%;
+    background: linear-gradient(315deg, #00B38D 0%, #00B1EB 100%);
+    height: 81px;
+    width: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+    font-family: 'Mark Pro';
+    color: white;
+}
+
+.rb-container ul.rb li.li-Q1::before {
+    content: "Q1";
+}
+.rb-container ul.rb li.li-Q2::before {
+    content: "Q2";
+}
+.rb-container ul.rb li.li-Q3::before {
+    content: "Q3";
+}
+.rb-container ul.rb li.li-Q4::before {
+    content: "Q4";
+}
+.rb-container ul.rb li.li-2024::before {
+    content: "2024";
+    background: url(./assets/for-bg.png) no-repeat -52px center;
+    background-size: 196px 169px;
+    height: 100px;
+    width: 110px;
+    left: -53px;
+}
+.rb-container ul.rb li.li-2023::before {
+    content: "2023";
+    background: url(./assets/for-bg.png) no-repeat -52px center;
+    background-size: 196px 169px;
+    height: 100px;
+    width: 110px;
+    left: -53px;
+}
+
+.item-content li {
+    list-style-type: disc;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    min-height: auto;
+    margin-left: 2rem;
+}
+
+ul.rb li.rb-item .item-title {
+    color: #070627;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item-content {
+    color: #070627;
+}
+
+.section-max-width {
+    max-width: 1536px;
+}
